@@ -12,6 +12,6 @@ setup(
     author_email='leeowen988@gmail.com',
     description='Ordinary differential equation simulation for plastic bending physics experiment',
     py_modules=[],
-    install_requires=["numpy"],
-    package_data=[]
+    install_requires=["numpy","matplotlib"]
+    #package_data=[]
 )

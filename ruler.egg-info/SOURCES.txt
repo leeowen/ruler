@@ -3,4 +3,5 @@ setup.py
 ruler.egg-info/PKG-INFO
 ruler.egg-info/SOURCES.txt
 ruler.egg-info/dependency_links.txt
+ruler.egg-info/requires.txt
 ruler.egg-info/top_level.txt
