@@ -164,7 +164,7 @@ def Simply_Supported_Beam(delta):
 
 def plot_simply_supported_beam(x,y):
     matplotlib.pyplot.axis([0, length, -20, 5])
-    matplotlib.pyplot.plot(x,y)
+    matplotlib.pyplot.plot(x,y, 'r', linewidth=2.5)
     matplotlib.pyplot.xlabel('Length in cm',fontsize=18)
     matplotlib.pyplot.ylabel('Height in cm',fontsize=18)
     matplotlib.pyplot.title('Simply Supported Beam',fontsize=20)
@@ -176,7 +176,7 @@ def plot_simply_supported_beam(x,y):
 
 def plot_fixed_end_beam(x,y):
     matplotlib.pyplot.axis([0, length, -20, 5])
-    matplotlib.pyplot.plot(x,y)
+    matplotlib.pyplot.plot(x,y, 'r', linewidth=2.5)
     matplotlib.pyplot.xlabel('Length in cm',fontsize=17)
     matplotlib.pyplot.ylabel('Height in cm',fontsize=17)
     matplotlib.pyplot.title('Fixed End Beam', fontsize=20)
@@ -188,7 +188,7 @@ def plot_fixed_end_beam(x,y):
 
 def plot_cantilever_beam(x, y):
     matplotlib.pyplot.axis([0, length, -20, 5])
-    matplotlib.pyplot.plot(x, y)
+    matplotlib.pyplot.plot(x, y, 'r', linewidth=2.5)
     matplotlib.pyplot.xlabel('Length in cm',fontsize=18)
     matplotlib.pyplot.ylabel('Height in cm',fontsize=18)
     matplotlib.pyplot.title('Cantilever Beam',fontsize=20)
