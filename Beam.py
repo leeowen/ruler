@@ -165,33 +165,36 @@ def Simply_Supported_Beam(delta):
 def plot_simply_supported_beam(x,y):
     matplotlib.pyplot.axis([0, length, -20, 5])
     matplotlib.pyplot.plot(x,y)
-    matplotlib.pyplot.xlabel('Length in cm')
-    matplotlib.pyplot.ylabel('Height in cm')
-    matplotlib.pyplot.title('Simply Supported Beam')
+    matplotlib.pyplot.xlabel('Length in cm',fontsize=18)
+    matplotlib.pyplot.ylabel('Height in cm',fontsize=18)
+    matplotlib.pyplot.title('Simply Supported Beam',fontsize=20)
     matplotlib.pyplot.axis('equal')
-    matplotlib.pyplot.text(x=0,y=2,s='delta='+str(delta))
+    matplotlib.pyplot.tick_params(labelsize=13)
+    matplotlib.pyplot.text(x=0,y=2,s='delta='+str(delta),fontsize=16)
     matplotlib.pyplot.show()
 
 
 def plot_fixed_end_beam(x,y):
     matplotlib.pyplot.axis([0, length, -20, 5])
     matplotlib.pyplot.plot(x,y)
-    matplotlib.pyplot.xlabel('Length in cm')
-    matplotlib.pyplot.ylabel('Height in cm')
-    matplotlib.pyplot.title('Fixed End Beam')
+    matplotlib.pyplot.xlabel('Length in cm',fontsize=17)
+    matplotlib.pyplot.ylabel('Height in cm',fontsize=17)
+    matplotlib.pyplot.title('Fixed End Beam', fontsize=20)
     matplotlib.pyplot.axis('equal')
-    matplotlib.pyplot.text(x=0,y=2,s='delta='+str(delta))
+    matplotlib.pyplot.tick_params(labelsize=13)
+    matplotlib.pyplot.text(x=0,y=2,s='delta='+str(delta), fontsize=16)
     matplotlib.pyplot.show()
 
 
 def plot_cantilever_beam(x, y):
     matplotlib.pyplot.axis([0, length, -20, 5])
     matplotlib.pyplot.plot(x, y)
-    matplotlib.pyplot.xlabel('Length in cm')
-    matplotlib.pyplot.ylabel('Height in cm')
-    matplotlib.pyplot.title('Cantilever Beam')
+    matplotlib.pyplot.xlabel('Length in cm',fontsize=18)
+    matplotlib.pyplot.ylabel('Height in cm',fontsize=18)
+    matplotlib.pyplot.title('Cantilever Beam',fontsize=20)
     matplotlib.pyplot.axis('equal')
-    matplotlib.pyplot.text(x=0, y=2, s='delta=' + str(delta))
+    matplotlib.pyplot.tick_params(labelsize=13)
+    matplotlib.pyplot.text(x=0, y=2, s='delta=' + str(delta), fontsize=16)
     matplotlib.pyplot.show()
 
 
@@ -204,8 +207,8 @@ if __name__ == "__main__":
     y=Simply_Supported_Beam(delta)
     plot_simply_supported_beam(x,y)
 
-    delta = -1.5
-    length=40.8
+    delta = -1.
+    length=38
     for i in range(steps+1):
         x[i]=length*i/steps
     y = Fixed_End_Beam(delta)
